@@ -52,11 +52,11 @@ const Hero = ({ isDarkMode }) => {
   const images = [i1, i2, i3, i4, i5, i6, i7, i8, i9, i10, i11, i12]; 
 
   return (
-    <div className={`transition-colors duration-500 ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
+    <div className={`transition-colors pt-28 duration-500 ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
       <section className="w-full h-5/6 flex flex-col lg:flex-row items-center justify-center px-6 lg:px-7 py-7">
         {/* Left Half - Lion Animation */}
-        <div className="flex-1 flex justify-center items-center relative w-full h-[300px] lg:h-[400px]">
-          <svg width="250" height="250" className="absolute">
+        <div className="flex-1 flex justify-center items-center relative w-full h-[400px] lg:h-[400px]">
+          <svg width="500" height="500" className="absolute">
             {Array.from({ length: 9 }).map((_, i) => (
               <circle
                 key={i}
