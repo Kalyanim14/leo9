@@ -96,10 +96,10 @@ const Navbar = () => {
 
   return (
     <div className="relative">
-      <nav className={`w-full mb-3 shadow-md px-6 py-4 flex justify-between items-center fixed top-0 z-50 transition-colors duration-500 ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
+      <nav className={`w-full mb-3 h-20 shadow-md px-60 py-4 flex justify-between items-center fixed top-0 z-50 transition-colors duration-500 ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
         {/* Logo */}
-        <div className="text-2xl font-bold pl-4 md:pl-20 flex items-center">
-          <img src={leo9} alt="Logo" className="h-8 w-8 mr-2"/>
+        <div className="text-4xl  font-semibold pl-4 md:pl-20 flex items-center">
+          <img src={leo9} alt="Logo" className="h-10 w-10 mr-2"/>
           leo9
         </div>
 

@@ -72,17 +72,32 @@ const Hero = ({ isDarkMode }) => {
         </div>
 
         {/* Right Half - Text */}
-        <div className="flex-1 text-center lg:text-left mt-10 lg:mt-0">
-          <h2 className={`text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight transition-colors duration-500 ${isDarkMode ? 'text-white' : 'text-black'}`}>
-            Design <br /> Transform <br /> Accelerate
-          </h2>
-          <h1 className={`text-xl md:text-2xl lg:text-3xl mt-4 font-semibold transition-colors duration-500 ${isDarkMode ? 'text-gray-200' : 'text-gray-800'}`}>
-            Redefining user experiences through Behavioural Science & AI
-          </h1>
-          
-          {/* CTA Buttons */}
-          
-        </div>
+        {/* Right Half - Text */}
+          <div className="flex-1 text-center lg:text-left mt-10 lg:mt-0">
+            <motion.h2
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              className={`text-5xl md:text-9xl lg:text-7xl font-extrabold leading-tight tracking-tight transition-colors duration-500 ${
+                isDarkMode ? "text-white" : "text-black"
+              }`}
+            >
+              Design <br /> Transform <br /> Accelerate
+            </motion.h2>
+
+            <motion.h1
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+              className={`text-xl md:text-2xl lg:text-3xl mt-8 font-semibold transition-colors duration-500 ${
+                isDarkMode ? "text-gray-200" : "text-gray-800"
+              }`}
+            >
+              Redefining user experiences through Behavioural Science & AI
+            </motion.h1>
+          </div>
+
+
       </section>
       
       <section className="w-full px-6 lg:px-16 py-12">
